@@ -16,8 +16,10 @@ class Node:
         self.color = color
         self.width = width
         self.height = height
-        self.x = x - self.width // 2
-        self.y = y - self.height // 2
+        self.x = x
+        self.y = y
+        # self.x = x - self.width // 2
+        # self.y = y - self.height // 2
         self.pos = (self.x, self.y)
         self.labelMesh = FONT.render(self.label, True, Colors.BLACK, Colors.WHITE)
         self.neighbors = []

@@ -1,6 +1,5 @@
 import sys
 import pygame as pg
-import pygame_gui as pg_gui
 from pygame.locals import *
 
 from Node import Node
@@ -72,7 +71,7 @@ while running:
                 # add node
                 if(resPlusButton == True):
                     if INPUT_BOX.text != '':
-                        newNode = Node(INPUT_BOX.text, 0, Colors.WHITE, DISPLAY_WIDTH // 2 , DISPLAY_HEIGHT // 2, 25)
+                        newNode = Node(INPUT_BOX.text, Colors.WHITE, DISPLAY_WIDTH // 2 , DISPLAY_HEIGHT // 2)
                         nodes.append(newNode)
                     else:
                         print('coloque uma label para o nó')

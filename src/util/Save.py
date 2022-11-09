@@ -1,7 +1,7 @@
 from Node import Node
 
 def execute(nodes):
-    f = open('util/save.txt', 'w')
+    f = open('util/nodesSave.txt', 'w')
     for node in nodes:
         f.write(node.label + ';' + str(node.pos))
         for neighbor in node.neighbors:
